@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { MenuItems } from "./MenuItems";
 import { Button } from "../Button";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 class Navbar extends Component {
   state = { clicked: false };
@@ -13,7 +15,11 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="NavbarItems">
-        <h1 className="navbar-logo">SANID</h1>
+        <Link to="/">
+          <h1 id="logo" className="navbar-logo" href="/">
+            SANID
+          </h1>
+        </Link>
         <div className="menu-icon" onClick={this.handleClick}>
           <i
             className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
@@ -22,11 +28,18 @@ class Navbar extends Component {
         <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
           {MenuItems.map((item, index) => {
             return (
-              <li key={index}>
-                <a className={item.cName} href={item.url}>
-                  {item.title}
-                </a>
-              </li>
+              <NavLink
+                exact
+                to={item.url}
+                activeClassName={item.activeName}
+                key={index}
+              >
+                <li key={index}>
+                  <a key={index} href={item.url} className={item.cName}>
+                    {item.title}
+                  </a>
+                </li>
+              </NavLink>
             );
           })}
         </ul>
