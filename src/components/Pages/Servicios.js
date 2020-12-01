@@ -2,7 +2,7 @@ import React from "react";
 
 function Servicios() {
   return (
-    <div>
+    <div className="container-servicios">
       <h1>Paguina de Servicios</h1>
     </div>
   );

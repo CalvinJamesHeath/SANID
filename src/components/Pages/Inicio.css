@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(9, 86, 122);
+
+  /* background: rgb(241, 223, 11);
+  background: linear-gradient(
+    90deg,
+    rgba(241, 223, 11, 1) 3%,
+    rgba(255, 248, 0, 1) 21%,
+    rgba(255, 236, 0, 1) 53%,
+    rgba(254, 255, 0, 1) 86%,
+    rgba(237, 216, 16, 1) 100%
+  ); */
+}
+/* font-family: 'Alfa Slab One', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Noto Serif JP', serif;
+font-family: 'Playfair Display SC', serif; */
+h2 {
+  color: yellow;
+  font-size: 1.7rem;
+  margin: 15px;
+  font-family: "Playfair Display SC", cursive;
+
+  /* font-family: "Cinzel", sans-serif; */
+  text-decoration: underline;
+}
+
+p {
+  font-family: "Noto Serif JP", sans-serif;
+
+  color: white;
+  margin: 15px;
+}

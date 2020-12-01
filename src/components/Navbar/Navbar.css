@@ -1,5 +1,5 @@
 .NavbarItems {
-  background: rgb(241, 223, 11);
+  /* background: rgb(241, 223, 11);
   background: linear-gradient(
     90deg,
     rgba(241, 223, 11, 1) 3%,
@@ -7,30 +7,44 @@
     rgba(255, 236, 0, 1) 53%,
     rgba(254, 255, 0, 1) 86%,
     rgba(237, 216, 16, 1) 100%
-  );
+  ); */
+  background-color: white;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.4rem;
+  position: sticky;
+  top: 0;
 }
-.LOGO {
-  border: none;
-  text-decoration: none;
+.flex {
+  display: flex;
+  flex-direction: row;
 }
+
 #logo:active {
   text-decoration: none;
-  color: white;
+  color: rgb(143, 156, 168);
   border: none;
 }
 #logo:focus {
   border: none;
   text-decoration: none;
 }
+.logo-img {
+  width: 46px;
+  height: 46px;
+  /* border-radius: 50%; */
+  overflow: hidden;
+  margin-top: 4px;
+  margin-left: 10px;
+}
 .navbar-logo {
-  color: #fff;
+  color: lightslategray;
   justify-self: start;
   margin-left: 20px;
+  margin-right: 10px;
+
   cursor: pointer;
   font-size: 40px;
   text-decoration: none;
@@ -44,6 +58,7 @@ a {
   text-decoration: underline;
   /* background-color: red; */
   color: black;
+  /* color: #2ecc71; */
 }
 .nav-links:hover {
   text-decoration: underline;
@@ -69,7 +84,7 @@ a {
 }
 
 .nav-links {
-  color: white;
+  color: lightslategray;
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
@@ -88,7 +103,7 @@ a {
 }
 
 .fa-bars {
-  color: #fff;
+  color: rgb(247, 247, 68);
 }
 
 .nav-links-mobile {
@@ -98,10 +113,13 @@ a {
 .menu-icon {
   display: none;
 }
-
-@media screen and (max-width: 800px) {
+#main {
+  height: 100vh;
+}
+@media screen and (max-width: 810px) {
   .NavbarItems {
-    position: relative;
+    position: sticky;
+    top: 0;
   }
 
   .nav-menu {
@@ -113,7 +131,7 @@ a {
     top: 80px;
     left: -100%;
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
   }
 
   .nav-menu.active {
@@ -135,8 +153,19 @@ a {
     color: #2ecc71;
     border-radius: 0;
   }
+  .main-nav-active .nav-links {
+    color: #2ecc71;
+  }
 
   .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(15%, 30%);
+    margin-left: 50px;
+  }
+
+  .logo-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -154,7 +183,7 @@ a {
   }
 
   .fa-times {
-    color: #fff;
+    color: rgb(247, 247, 68);
     font-size: 2rem;
   }
 
