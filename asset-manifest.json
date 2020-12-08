@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "./src/components/Pages/Inicio/static/css/main.ecbb8cba.chunk.css",
-    "main.js": "./src/components/Pages/Inicio/static/js/main.154d641c.chunk.js",
-    "main.js.map": "./src/components/Pages/Inicio/static/js/main.154d641c.chunk.js.map",
-    "runtime-main.js": "./src/components/Pages/Inicio/static/js/runtime-main.3abe31a3.js",
-    "runtime-main.js.map": "./src/components/Pages/Inicio/static/js/runtime-main.3abe31a3.js.map",
-    "static/css/2.437d98bc.chunk.css": "./src/components/Pages/Inicio/static/css/2.437d98bc.chunk.css",
-    "static/js/2.040fc15a.chunk.js": "./src/components/Pages/Inicio/static/js/2.040fc15a.chunk.js",
-    "static/js/2.040fc15a.chunk.js.map": "./src/components/Pages/Inicio/static/js/2.040fc15a.chunk.js.map",
-    "static/js/3.cbd67dfb.chunk.js": "./src/components/Pages/Inicio/static/js/3.cbd67dfb.chunk.js",
-    "static/js/3.cbd67dfb.chunk.js.map": "./src/components/Pages/Inicio/static/js/3.cbd67dfb.chunk.js.map",
-    "index.html": "./src/components/Pages/Inicio/index.html",
-    "precache-manifest.5011faa9d6a0e59bed14e4607ad4a054.js": "./src/components/Pages/Inicio/precache-manifest.5011faa9d6a0e59bed14e4607ad4a054.js",
-    "service-worker.js": "./src/components/Pages/Inicio/service-worker.js",
-    "static/css/2.437d98bc.chunk.css.map": "./src/components/Pages/Inicio/static/css/2.437d98bc.chunk.css.map",
-    "static/css/main.ecbb8cba.chunk.css.map": "./src/components/Pages/Inicio/static/css/main.ecbb8cba.chunk.css.map",
-    "static/js/2.040fc15a.chunk.js.LICENSE.txt": "./src/components/Pages/Inicio/static/js/2.040fc15a.chunk.js.LICENSE.txt",
-    "static/media/sanid.jpeg": "./src/components/Pages/Inicio/static/media/sanid.ef50612c.jpeg"
+    "main.css": "/sanid/static/css/main.ecbb8cba.chunk.css",
+    "main.js": "/sanid/static/js/main.0249f6f7.chunk.js",
+    "main.js.map": "/sanid/static/js/main.0249f6f7.chunk.js.map",
+    "runtime-main.js": "/sanid/static/js/runtime-main.4276b316.js",
+    "runtime-main.js.map": "/sanid/static/js/runtime-main.4276b316.js.map",
+    "static/css/2.437d98bc.chunk.css": "/sanid/static/css/2.437d98bc.chunk.css",
+    "static/js/2.4880f3ad.chunk.js": "/sanid/static/js/2.4880f3ad.chunk.js",
+    "static/js/2.4880f3ad.chunk.js.map": "/sanid/static/js/2.4880f3ad.chunk.js.map",
+    "static/js/3.402b69be.chunk.js": "/sanid/static/js/3.402b69be.chunk.js",
+    "static/js/3.402b69be.chunk.js.map": "/sanid/static/js/3.402b69be.chunk.js.map",
+    "index.html": "/sanid/index.html",
+    "precache-manifest.c8cfb0d4296a2718e7c45ffcc684b5e2.js": "/sanid/precache-manifest.c8cfb0d4296a2718e7c45ffcc684b5e2.js",
+    "service-worker.js": "/sanid/service-worker.js",
+    "static/css/2.437d98bc.chunk.css.map": "/sanid/static/css/2.437d98bc.chunk.css.map",
+    "static/css/main.ecbb8cba.chunk.css.map": "/sanid/static/css/main.ecbb8cba.chunk.css.map",
+    "static/js/2.4880f3ad.chunk.js.LICENSE.txt": "/sanid/static/js/2.4880f3ad.chunk.js.LICENSE.txt",
+    "static/media/sanid.jpeg": "/sanid/static/media/sanid.ef50612c.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3abe31a3.js",
+    "static/js/runtime-main.4276b316.js",
     "static/css/2.437d98bc.chunk.css",
-    "static/js/2.040fc15a.chunk.js",
+    "static/js/2.4880f3ad.chunk.js",
     "static/css/main.ecbb8cba.chunk.css",
-    "static/js/main.154d641c.chunk.js"
+    "static/js/main.0249f6f7.chunk.js"
   ]
 }
