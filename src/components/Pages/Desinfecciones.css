@@ -1,0 +1,57 @@
+.servi-links {
+  /* font-size: 1.3rem; */
+  color: lightslategray;
+  text-align: center;
+  /* border-color: 10px solid red; */
+}
+.MuiGrid-spacing-xs-2 {
+  justify-content: center;
+}
+.MuiGrid-root {
+  justify-content: center;
+}
+
+.links {
+  background: rgb(241, 223, 11);
+  background: linear-gradient(
+    90deg,
+    rgba(241, 223, 11, 1) 3%,
+    rgba(255, 248, 0, 1) 21%,
+    rgba(255, 236, 0, 1) 53%,
+    rgba(254, 255, 0, 1) 86%,
+    rgba(237, 216, 16, 1) 100%
+  );
+}
+.MuiGrid-spacing-xs-2 {
+  margin: 0 !important;
+}
+h5 {
+  margin-top: 5px;
+}
+.active .servi-links {
+  text-decoration: underline;
+}
+.servi-links:hover {
+  text-decoration: underline;
+}
+.servi-links:focus {
+  text-decoration: underline;
+  color: black;
+}
+.activado {
+  text-decoration: underline;
+}
+h5 {
+  font-size: 1.3rem;
+}
+.mip {
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 1144px) {
+  .mip {
+    white-space: nowrap;
+  }
+  /* .links {
+  } */
+}

@@ -4,7 +4,7 @@ import "./Productos.css";
 function Productos() {
   return (
     <div className="container-productos">
-      <h1>Productos</h1>
+      <h1>Paguina de Matafuegos</h1>
     </div>
   );
 }

@@ -1,19 +1,26 @@
 export const MenuItems = [
   {
     title: "Inicio",
+    exact: "exact",
     url: "/",
     cName: "nav-links",
     activeName: "main-nav-active",
   },
   {
-    title: "Servicios",
-    url: "/servicios",
+    title: "Desinfecciones",
+    url: "/Desinfecciones",
     cName: "nav-links",
     activeName: "main-nav-active",
   },
   {
-    title: "Productos",
-    url: "/productos",
+    title: "Matafuegos",
+    url: "/Matafuegos",
+    cName: "nav-links",
+    activeName: "main-nav-active",
+  },
+  {
+    title: "Otros Servicios",
+    url: "/OtrosServicios",
     cName: "nav-links",
     activeName: "main-nav-active",
   },
