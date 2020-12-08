@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/sanid/static/css/main.8284c343.chunk.css",
-    "main.js": "/sanid/static/js/main.cf9af9a7.chunk.js",
-    "main.js.map": "/sanid/static/js/main.cf9af9a7.chunk.js.map",
-    "runtime-main.js": "/sanid/static/js/runtime-main.6641e0bd.js",
-    "runtime-main.js.map": "/sanid/static/js/runtime-main.6641e0bd.js.map",
-    "static/js/2.94b6f058.chunk.js": "/sanid/static/js/2.94b6f058.chunk.js",
-    "static/js/2.94b6f058.chunk.js.map": "/sanid/static/js/2.94b6f058.chunk.js.map",
-    "static/js/3.648c302b.chunk.js": "/sanid/static/js/3.648c302b.chunk.js",
-    "static/js/3.648c302b.chunk.js.map": "/sanid/static/js/3.648c302b.chunk.js.map",
+    "main.css": "/sanid/static/css/main.ecbb8cba.chunk.css",
+    "main.js": "/sanid/static/js/main.e379f5e0.chunk.js",
+    "main.js.map": "/sanid/static/js/main.e379f5e0.chunk.js.map",
+    "runtime-main.js": "/sanid/static/js/runtime-main.4276b316.js",
+    "runtime-main.js.map": "/sanid/static/js/runtime-main.4276b316.js.map",
+    "static/css/2.437d98bc.chunk.css": "/sanid/static/css/2.437d98bc.chunk.css",
+    "static/js/2.4880f3ad.chunk.js": "/sanid/static/js/2.4880f3ad.chunk.js",
+    "static/js/2.4880f3ad.chunk.js.map": "/sanid/static/js/2.4880f3ad.chunk.js.map",
+    "static/js/3.402b69be.chunk.js": "/sanid/static/js/3.402b69be.chunk.js",
+    "static/js/3.402b69be.chunk.js.map": "/sanid/static/js/3.402b69be.chunk.js.map",
     "index.html": "/sanid/index.html",
-    "static/css/main.8284c343.chunk.css.map": "/sanid/static/css/main.8284c343.chunk.css.map",
-    "static/js/2.94b6f058.chunk.js.LICENSE.txt": "/sanid/static/js/2.94b6f058.chunk.js.LICENSE.txt",
-    "static/media/sanid.16479890.jpeg": "/sanid/static/media/sanid.16479890.jpeg"
+    "precache-manifest.b1156b0c2939ccce61afb07cebd53561.js": "/sanid/precache-manifest.b1156b0c2939ccce61afb07cebd53561.js",
+    "service-worker.js": "/sanid/service-worker.js",
+    "static/css/2.437d98bc.chunk.css.map": "/sanid/static/css/2.437d98bc.chunk.css.map",
+    "static/css/main.ecbb8cba.chunk.css.map": "/sanid/static/css/main.ecbb8cba.chunk.css.map",
+    "static/js/2.4880f3ad.chunk.js.LICENSE.txt": "/sanid/static/js/2.4880f3ad.chunk.js.LICENSE.txt",
+    "static/media/sanid.jpeg": "/sanid/static/media/sanid.ef50612c.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6641e0bd.js",
-    "static/js/2.94b6f058.chunk.js",
-    "static/css/main.8284c343.chunk.css",
-    "static/js/main.cf9af9a7.chunk.js"
+    "static/js/runtime-main.4276b316.js",
+    "static/css/2.437d98bc.chunk.css",
+    "static/js/2.4880f3ad.chunk.js",
+    "static/css/main.ecbb8cba.chunk.css",
+    "static/js/main.e379f5e0.chunk.js"
   ]
 }
