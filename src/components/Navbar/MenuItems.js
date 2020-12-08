@@ -1,7 +1,7 @@
 export const MenuItems = [
   {
     title: "Inicio",
-    exact: "exact",
+    exact: true,
     url: "/",
     cName: "nav-links",
     activeName: "main-nav-active",

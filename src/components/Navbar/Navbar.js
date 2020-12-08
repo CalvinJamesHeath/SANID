@@ -49,9 +49,9 @@ class Navbar extends Component {
                 key={index}
               >
                 <li key={index}>
-                  <a key={index} className={item.cName}>
+                  <div key={index} className={item.cName} href={item.url}>
                     {item.title}
-                  </a>
+                  </div>
                 </li>
               </NavLink>
             );
