@@ -1,7 +1,11 @@
 import React from "react";
 
 function Desinfeccion() {
-  return <React.Fragment></React.Fragment>;
+  return (
+    <React.Fragment>
+      <p></p>
+    </React.Fragment>
+  );
 }
 
 export default Desinfeccion;

@@ -12,10 +12,12 @@ import Desinfecciones from "./components/Pages/Desinfecciones";
 import Productos from "./components/Pages/Productos";
 import Inicio from "./components/Pages/Inicio";
 import OtrosServicios from "./components/Navbar/OtrosServicios";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Redirect to="/" component={Inicio} />
       <div className="App">
         <Navbar />
@@ -28,11 +30,11 @@ function App() {
         <div className="whatsapp">
           <a
             href="https://wa.me/+5493541533876"
-            class="whatsapp_float"
+            className="whatsapp_float"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fa fa-whatsapp whatsapp-icon"></i>
+            <i className="fa fa-whatsapp whatsapp-icon"></i>
           </a>
         </div>
         <Footer />
