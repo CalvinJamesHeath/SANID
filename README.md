@@ -1,1 +1,2 @@
-# [LIVE-LINK](https://calvinjamesheath.github.io/sanid/)
+# [NETLIFY](https://sanid.netlify.app/)
+# [GH-PAGES](https://calvinjamesheath.github.io/sanid/)
