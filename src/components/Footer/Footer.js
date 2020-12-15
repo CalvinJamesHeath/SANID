@@ -1,40 +1,56 @@
 import React, { Component } from "react";
+
+import emailjs from "emailjs-com";
 import "./Footer.css";
 import Grid from "@material-ui/core/Grid";
-import axios from "axios";
-
-const API_PATH =
-  "http://localhost:1992/react-contact-form/api/contact/index.php";
 
 class Footer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      fname: "",
-      lname: "",
-      email: "",
-      message: "",
       mailSent: false,
-      error: null,
     };
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
   }
 
   handleFormSubmit = (e) => {
     e.preventDefault();
-    axios({
-      method: "post",
-      url: `${API_PATH}`,
-      headers: { "content-type": "application/json" },
-      data: this.state,
-    })
-      .then((result) => {
-        this.setState({
-          mailSent: result.data.sent,
-        });
-      })
-      .catch((error) => this.setState({ error: error.message }));
+    emailjs
+      .sendForm(
+        "service_lqyn1ff",
+        "template_x38kd83",
+        e.target,
+        "user_mofgR4iD6Q9s4rIboog5Q"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+    this.setState({
+      mailSent: true,
+    });
   };
+  componentDidUpdate() {
+    if (this.state.mailSent) {
+      // when the state is updated (SUMBITED),
+      // a timeout is triggered to switch it back off
+      this.Reset = setTimeout(() => {
+        this.setState(() => ({ mailSent: false }));
+      }, 5000);
+    }
+  }
+  componentWillUnmount() {
+    // we set the timeout to this.Reset so that we can
+    // clean it up when the component is unmounted.
+    // otherwise you could get your app trying to modify the state on an
+    // unmounted component, which will throw an error
+    clearTimeout(this.Reset);
+  }
 
   render() {
     return (
@@ -64,55 +80,53 @@ class Footer extends Component {
               <h3>
                 <strong>Contáctanos!</strong>
               </h3>
+
               <div>
-                <form action="/action_page.php">
+                <form onSubmit={this.handleFormSubmit}>
                   <label>Nombre</label>
+
                   <input
                     type="text"
-                    id="fname"
-                    name="firstname"
                     placeholder="Tu nombre..."
-                    value={this.state.fname}
-                    onChange={(e) => this.setState({ fname: e.target.value })}
+                    name="name"
+                    required
                   />
                   <label>Apellido</label>
                   <input
+                    required
                     type="text"
-                    id="lname"
                     name="lastname"
                     placeholder="Tu apellido..."
-                    value={this.state.lname}
-                    onChange={(e) => this.setState({ lname: e.target.value })}
                   />
 
                   <label>Email</label>
+
                   <input
                     type="email"
-                    id="email"
                     name="email"
                     placeholder="Tu email..."
-                    value={this.state.email}
-                    onChange={(e) => this.setState({ email: e.target.value })}
+                    required
                   />
 
                   <label>Mensaje</label>
                   <textarea
-                    id="subject"
-                    name="subject"
+                    name="message"
                     placeholder="Escribe algo..."
-                    onChange={(e) => this.setState({ message: e.target.value })}
-                    value={this.state.message}
+                    required
                   ></textarea>
+
                   <div id="center">
                     <input
                       type="submit"
                       value="Enviar"
-                      onClick={(e) => this.handleFormSubmit(e)}
+                      onSubmit={(e) => this.handleFormSubmit(e)}
                     />
                   </div>
                   <div>
                     {this.state.mailSent && (
-                      <div>Gracias por Contactarte con Nosotros</div>
+                      <div>
+                        <p className="sent"> Su consulta a sido Enviada!</p>
+                      </div>
                     )}
                   </div>
                 </form>

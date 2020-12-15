@@ -63,9 +63,9 @@ function Desinfecciones() {
         </div>
       </div>
       <Switch>
+        <Route path="/Desinfecciones" exact component={Desinfeccion} />
         <Route path="/Desinfecciones/Asepcia" component={Asepcia} />
         <Route path="/Desinfecciones/Tratamiento" component={Tratamiento} />
-        <Route path="/Desinfecciones" component={Desinfeccion} />
         <Route path="/Desinfecciones/Mip" component={Mip} />
       </Switch>
     </React.Fragment>
