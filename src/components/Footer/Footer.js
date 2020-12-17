@@ -1,142 +1,82 @@
-import React, { Component } from "react";
-
-import emailjs from "emailjs-com";
+import React from "react";
 import "./Footer.css";
+import { NavLink } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 
-class Footer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      mailSent: false,
-    };
-    this.handleFormSubmit = this.handleFormSubmit.bind(this);
-  }
+const Footer = () => {
+  return (
+    <React.Fragment>
+      <div className="footer-container">
+        <Grid container spacing={0}>
+          <Grid item xs={12} sm={12} md={4} lg={4}>
+            {/* <div className="footer"> */}
+            <div className="footer-heading footer-1">
+              <h2>Sobre Nosotros </h2>
+              <NavLink
+                exact
+                to="/DataFiscal"
+                key={"Fiscal"}
+                className="servi-links-footer"
+                activeClassName="activatres"
+              >
+                Data Fiscal
+              </NavLink>
+              <a href="#" id="">
+                Customers
+              </a>
 
-  handleFormSubmit = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_lqyn1ff",
-        "template_x38kd83",
-        e.target,
-        "user_mofgR4iD6Q9s4rIboog5Q"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-    this.setState({
-      mailSent: true,
-    });
-  };
-  componentDidUpdate() {
-    if (this.state.mailSent) {
-      // when the state is updated (SUMBITED),
-      // a timeout is triggered to switch it back off
-      this.Reset = setTimeout(() => {
-        this.setState(() => ({ mailSent: false }));
-      }, 5000);
-    }
-  }
-  componentWillUnmount() {
-    // we set the timeout to this.Reset so that we can
-    // clean it up when the component is unmounted.
-    // otherwise you could get your app trying to modify the state on an
-    // unmounted component, which will throw an error
-    clearTimeout(this.Reset);
-  }
-
-  render() {
-    return (
-      <React.Fragment>
-        <div className="container">
-          <Grid container spacing={3}>
-            <Grid item xs={12} sm={12} md={8} lg={8}>
-              <h3>
-                <strong>Nuestra Ubicación</strong>
-              </h3>
-
-              <div id="wrapper">
-                <iframe
-                  title="map"
-                  width="100%"
-                  height="468"
-                  frameBorder="0"
-                  scrolling="no"
-                  marginHeight="0"
-                  marginWidth="0"
-                  // zIndex="0"
-                  src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=Sanid%20SA+(Sanid)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                ></iframe>
-              </div>
-            </Grid>
-            <Grid item xs={12} sm={12} md={4} lg={4}>
-              <h3>
-                <strong>Contáctanos!</strong>
-              </h3>
-
-              <div>
-                <form onSubmit={this.handleFormSubmit}>
-                  <label>Nombre</label>
-
-                  <input
-                    type="text"
-                    placeholder="Tu nombre..."
-                    name="name"
-                    required
-                  />
-                  <label>Apellido</label>
-                  <input
-                    required
-                    type="text"
-                    name="lastname"
-                    placeholder="Tu apellido..."
-                  />
-
-                  <label>Email</label>
-
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Tu email..."
-                    required
-                  />
-
-                  <label>Mensaje</label>
-                  <textarea
-                    name="message"
-                    placeholder="Escribe algo..."
-                    required
-                  ></textarea>
-
-                  <div id="center">
-                    <input
-                      type="submit"
-                      value="Enviar"
-                      onSubmit={(e) => this.handleFormSubmit(e)}
-                    />
-                  </div>
-                  <div>
-                    {this.state.mailSent && (
-                      <div>
-                        <p className="sent"> Su consulta a sido Enviada!</p>
-                      </div>
-                    )}
-                  </div>
-                </form>
-              </div>
-            </Grid>
+              <NavLink
+                exact
+                to="/PrivacidadyTerminos"
+                key={"terms"}
+                className="servi-links-footer"
+                activeClassName="activatres"
+                id="center"
+              >
+                Privacidad y Términos Legales
+              </NavLink>
+            </div>
           </Grid>
-        </div>
-      </React.Fragment>
-    );
-  }
-}
+          <Grid item xs={12} sm={6} md={4} lg={4}>
+            <div className="footer-heading footer-2" id="al-footer">
+              <h2 id="Contácto">Contáctanos</h2>
+
+              <a href="tel:08004441343" id="">
+                0800 444 1343
+              </a>
+              <a
+                href="https://wa.me/+5493541533876?text=I'm%20interested%20in%20your%20car%20for%20sale"
+                id=""
+              >
+                WhatsApp
+              </a>
+              <div>
+                <a href="tel:3541436092" id="">
+                  Fijo I&nbsp;
+                </a>
+                <a href="tel:3541426538" id="">
+                  Fijo 2
+                </a>
+              </div>
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4} lg={4}>
+            <div className="footer-heading footer-3">
+              <h2>Medios Sociales</h2>
+              <a href="#" target="_blank" id="">
+                Instagram
+              </a>
+              <a href="#" target="_blank" id="">
+                Facebook
+              </a>
+            </div>
+            {/* </div> */}
+            {/* </div> */}
+          </Grid>
+        </Grid>
+      </div>
+    </React.Fragment>
+  );
+};
 
 export default Footer;

@@ -25,9 +25,11 @@ export const MenuItems = [
     activeName: "main-nav-active",
   },
   {
-    title: "Contáctanos",
-    url: "#",
-    cName: "nav-links-mobile",
+    titlee: "Contáctanos",
+    url: "",
+    hreff: "#Contácto",
+    cNamee: "nav-links-mobile",
+    key: "contactoo",
     // activeName: "main-nav-active",
   },
 ];

@@ -1,0 +1,92 @@
+h3 {
+  text-decoration: underline;
+  text-align: center;
+  font-family: cursive;
+}
+#wrapper {
+  border: 1px solid white;
+  -webkit-box-shadow: 0 5px 10px #777;
+  -moz-box-shadow: 0 5px 10px #777;
+  box-shadow: 0 5px 10px #777;
+}
+/* contact form CSS */
+/* .form { */
+/* max-width: 430px; */
+/* } */
+/* .center {
+} */
+label {
+  /* text-decoration: underline; */
+  font-size: 1.2rem;
+  font-weight: 550;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 4px;
+  margin-bottom: 14px;
+  resize: vertical;
+  -webkit-box-shadow: 0 5px 10px #777;
+  -moz-box-shadow: 0 5px 10px #777;
+  box-shadow: 0 5px 10px #777;
+}
+input[type="submit"] {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid #1fc464;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 12px;
+  font-weight: bold;
+  width: 100%;
+  background-color: #1fc464;
+}
+input[type="submit"]:hover {
+  background-color: white;
+  color: black;
+}
+input[type="submit"]:active {
+  letter-spacing: 2px;
+}
+input[type="submit"]:after {
+  content: "Enviado";
+}
+
+.container {
+  margin: 2rem;
+  width: auto;
+  max-width: initial;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.sent {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  animation: sent 3s linear;
+  animation-fill-mode: forwards;
+  /* white-space: nowrap; */
+}
+
+@keyframes sent {
+  0% {
+    color: white;
+  }
+  100% {
+    color: black;
+    display: none;
+  }
+}

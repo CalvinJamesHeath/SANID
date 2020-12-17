@@ -7,7 +7,7 @@ const SIZES = ["btn--medium", "btn--large"];
 
 export const Button = ({
   children,
-  type,
+  button,
   onClick,
   buttonStyle,
   buttonSize,
@@ -19,12 +19,15 @@ export const Button = ({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <button
+    <a
       className={`btn ${checkButtonStyle} ${checkButtonSize}`}
       onClick={onClick}
-      type={type}
+      type={button}
+      href="#Contácto"
+      key="hola"
     >
       {children}
-    </button>
+    </a>
+    // </a>
   );
 };

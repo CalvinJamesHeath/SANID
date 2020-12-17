@@ -1,0 +1,10 @@
+img {
+  height: auto;
+  object-fit: contain;
+}
+h1 {
+  color: red;
+}
+.titulo-fiscal {
+  text-decoration: underline;
+}

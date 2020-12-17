@@ -42,18 +42,27 @@ class Navbar extends Component {
         >
           {MenuItems.map((item, index) => {
             return (
-              <NavLink
-                exact={item.exact}
-                to={item.url}
-                activeClassName={item.activeName}
-                key={index}
-              >
-                <li key={index}>
-                  <div key={index} className={item.cName} href={item.url}>
-                    {item.title}
-                  </div>
-                </li>
-              </NavLink>
+              <React.Fragment key={index}>
+                <NavLink
+                  exact={item.exact}
+                  to={item.url}
+                  activeClassName={item.activeName}
+                  key={index}
+                >
+                  <li>
+                    <div key={index} className={item.cName} url={item.url}>
+                      {item.title}
+                    </div>
+                  </li>
+                </NavLink>
+                <a
+                  href={item.hreff}
+                  title={item.titlee}
+                  className={item.cNamee}
+                >
+                  {item.titlee}
+                </a>
+              </React.Fragment>
             );
           })}
         </ul>
