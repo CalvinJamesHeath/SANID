@@ -1,3 +1,31 @@
 .container-productos {
-  /* background-color: lightslategray; */
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 3%,
+    rgba(255, 38, 0, 1) 21%,
+    rgba(218, 62, 14, 1) 53%,
+    rgba(172, 36, 13, 1) 86%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.card-matafuegos {
+  margin: 2rem;
+}
+.card-matafuego {
+  margin: 2rem 2rem 0rem 2rem;
+}
+
+.img-matafuego1 {
+  /* width: 40%; */
+  /* height: auto; */
+  object-fit: contain;
+}
+.img-matafuego03 {
+  /* width: 500px; */
+  /* height: 600px; */
+  object-fit: contain;
+}
+.card-matafuegos03 {
+  /* height: 800px; */
 }

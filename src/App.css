@@ -21,7 +21,6 @@
   box-shadow: 2px 2px 3px #999;
   z-index: 100;
   padding-left: 1px;
-  padding-top: 1px;
   display: hidden;
 }
 .subir:hover {
@@ -38,15 +37,16 @@
   width: 50px;
   height: 50px;
   bottom: 10px;
+  line-height: 0;
   right: 10px;
   background-color: #25d366;
   color: #fff;
   border-radius: 50px;
   text-align: center;
-  font-size: 35px;
+  font-size: 41px;
   box-shadow: 2px 2px 3px #999;
   z-index: 100;
-  padding-left: 2px;
+  padding-top: 6px;
 }
 
 .whatsapp_float:hover {

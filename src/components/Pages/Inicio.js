@@ -6,8 +6,8 @@ function Inicio() {
   return (
     <React.Fragment>
       <div>
-        <Grid container spacing={0}>
-          <Grid item xs={12} md={6}>
+        <Grid className="css" container spacing={0}>
+          <Grid item xs={12} md={12}>
             <div className="somos">
               <h2 className="title">¿QUIÉNES SOMOS?</h2>
               <p>
@@ -33,7 +33,7 @@ function Inicio() {
               </p>
             </div>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={12}>
             <div className="objetivos">
               <h2 className="title">NUESTROS OBJETIVOS</h2>
               <p>
