@@ -2,6 +2,8 @@ h3 {
   text-decoration: underline;
   text-align: center;
   font-family: cursive;
+  margin-bottom: 1.7rem;
+  margin-top: 0;
 }
 #wrapper {
   border: 1px solid white;
@@ -65,7 +67,8 @@ input[type="submit"]:after {
 }
 
 .container {
-  margin: 2rem;
+  /* margin: 2rem; */
+  padding-bottom: 1rem;
   width: auto;
   max-width: initial;
   border-radius: 5px;
@@ -73,7 +76,7 @@ input[type="submit"]:after {
 }
 
 .sent {
-  margin: 0;
+  margin-top: 1.5rem;
   text-align: center;
   font-size: 1.5rem;
   animation: sent 3s linear;
@@ -87,6 +90,7 @@ input[type="submit"]:after {
   }
   100% {
     color: black;
+
     display: none;
   }
 }

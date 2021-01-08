@@ -17,6 +17,9 @@
   position: sticky;
   top: 0;
   z-index: 5;
+  -webkit-box-shadow: 0 5px 10px #777;
+  -moz-box-shadow: 0 5px 10px #777;
+  box-shadow: 0 5px 10px #777;
 }
 .flex {
   display: flex;
@@ -37,12 +40,12 @@
   height: 46px;
   /* border-radius: 50%; */
   overflow: hidden;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .navbar-logo {
   color: lightslategray;
   justify-self: start;
-  margin-left: 10px;
+  margin-left: 15px;
   margin-right: 10px;
   cursor: pointer;
   font-size: 40px;
@@ -62,7 +65,8 @@ h1:hover {
 .main-nav-active .nav-links {
   text-decoration: underline;
   /* background-color: red; */
-  color: black;
+  color: #0056b3;
+
   /* color: #2ecc71; */
 }
 .nav-links:hover {
@@ -109,7 +113,8 @@ h1:hover {
 }
 
 .fa-bars {
-  color: rgb(247, 247, 68);
+  /* color: rgb(247, 247, 68); */
+  color: black;
 }
 
 .nav-links-mobile {
@@ -122,7 +127,7 @@ h1:hover {
 #main {
   height: 100vh;
 }
-@media screen and (max-width: 1168px) {
+@media screen and (max-width: 1200px) {
   .NavbarItems {
     position: sticky;
     top: 0;
@@ -158,7 +163,7 @@ h1:hover {
 
   .nav-links {
     text-align: center;
-    padding: 2.5rem;
+    padding: 1.5rem;
     width: 100%;
     display: table;
     color: black;
@@ -179,7 +184,7 @@ h1:hover {
     top: 0;
     left: 0;
     transform: translate(15%, 30%);
-    margin-left: 50px;
+    margin-left: 60px;
   }
 
   .logo-img {
@@ -200,7 +205,8 @@ h1:hover {
   }
 
   .fa-times {
-    color: rgb(247, 247, 68);
+    color: black;
+    /* color: rgb(247, 247, 68); */
     font-size: 2rem;
   }
 
@@ -208,7 +214,7 @@ h1:hover {
     display: block;
     text-align: center;
     padding: 1.5rem;
-    margin: 2rem auto;
+    margin: 0.5rem auto;
     border-radius: 4px;
     width: 80%;
     background: red;

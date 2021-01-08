@@ -1,14 +1,12 @@
 .servi-links {
-  /* font-size: 1.3rem; */
   color: lightslategray;
   text-align: center;
-  /* border-color: 10px solid red; */
 }
 .MuiGrid-spacing-xs-2 {
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .MuiGrid-root {
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .links {
@@ -26,13 +24,17 @@
   margin: 0 !important;
 }
 h5 {
+  font-size: 1.5rem;
+  font-weight: 550;
   margin-top: 5px;
+  font-family: "Noto Sans", sans-serif;
 }
 .active .servi-links {
   text-decoration: underline;
 }
 .servi-links:hover {
   text-decoration: underline;
+  color: black;
 }
 .servi-links:focus {
   text-decoration: underline;
@@ -40,18 +42,15 @@ h5 {
 }
 .activado {
   text-decoration: underline;
+  color: black;
 }
-h5 {
-  font-size: 1.3rem;
-}
+
 .mip {
   white-space: nowrap;
 }
 
-@media only screen and (max-width: 1144px) {
+@media only screen and (max-width: 1500px) {
   .mip {
     white-space: nowrap;
   }
-  /* .links {
-  } */
 }

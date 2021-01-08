@@ -18,7 +18,7 @@ function Desinfecciones() {
       <div className="container-servicios">
         <div className="links">
           <Grid container spacing={0}>
-            <Grid item xs={12} sm={6} md={6} lg={2}>
+            <Grid item xs={12} md={6} lg={2}>
               <NavLink
                 exact
                 to="/Desinfecciones"
@@ -29,7 +29,7 @@ function Desinfecciones() {
                 <h5>Desinfección</h5>
               </NavLink>
             </Grid>
-            <Grid item xs={12} sm={6} md={6} lg={2}>
+            <Grid item xs={12} md={6} lg={2}>
               <NavLink
                 to="/Desinfecciones/Tratamiento"
                 key={"asepcia"}
@@ -39,7 +39,7 @@ function Desinfecciones() {
                 <h5>Tratamiento UBV</h5>
               </NavLink>
             </Grid>
-            <Grid item xs={12} sm={6} md={6} lg={2}>
+            <Grid item xs={12} md={6} lg={2}>
               <NavLink
                 to="/Desinfecciones/Asepcia"
                 key={"asepcia"}
@@ -49,7 +49,7 @@ function Desinfecciones() {
                 <h5>Asepcia</h5>
               </NavLink>
             </Grid>
-            <Grid item xs={12} sm={6} md={6} lg={2}>
+            <Grid item xs={12} md={6} lg={3}>
               <NavLink
                 to="/Desinfecciones/Mip"
                 key={"asepcia"}

@@ -4,6 +4,7 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
+
 .back-to-top {
   display: none;
 }
@@ -11,26 +12,26 @@
   position: fixed;
   width: 50px;
   height: 50px;
+  outline: none;
   bottom: 70px;
   right: 10px;
   background-color: #25d366;
   color: #fff;
   border-radius: 50px;
   text-align: center;
-  font-size: 35px;
+  font-size: 35.5px;
   box-shadow: 2px 2px 3px #999;
   z-index: 100;
   padding-left: 1px;
+
   display: hidden;
 }
-.subir:hover {
-  color: #2ecc71;
+.subir:visited {
+  color: white;
 }
-
-.subir:hover {
-  color: black;
+.whatsapp_float:visited {
+  color: white;
 }
-
 /* whatsAPP */
 .whatsapp_float {
   position: fixed;
@@ -47,27 +48,44 @@
   box-shadow: 2px 2px 3px #999;
   z-index: 100;
   padding-top: 6px;
+  padding-left: 1px;
 }
 
-.whatsapp_float:hover {
-  color: lightslategray;
+@media screen and (min-width: 1200px) {
+  .subir:hover {
+    color: black;
+  }
+  .whatsapp_float:hover {
+    color: lightslategray;
+  }
+  .whatsapp-icon:hover {
+    color: black;
+  }
+  .whatsapp_float:active {
+    color: white;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .whatsapp-icon:active {
+    color: white;
+  }
 }
-.whatsapp-icon:hover {
-  color: black;
-}
-
 /* for mobile */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   .whatsapp-icon {
     margin-top: 10px;
+    font-size: 52px;
   }
 
   .whatsapp_float {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     bottom: 20px;
     right: 10px;
-    font-size: 22px;
   }
 }
 
@@ -80,4 +98,4 @@
     font-size: 22px;
     padding-top: 4px;
   }
-}
+} */

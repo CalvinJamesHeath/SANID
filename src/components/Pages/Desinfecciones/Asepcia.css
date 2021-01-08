@@ -1,0 +1,22 @@
+.asepcia__contenedor {
+  margin: 1rem;
+  -webkit-box-shadow: 0 5px 10px #777;
+  -moz-box-shadow: 0 5px 10px #777;
+  box-shadow: 0 5px 10px #777;
+}
+.lightgray {
+  background-color: #f2f2f2;
+}
+
+.list__desinfectar__asepcia {
+  list-style: upper-roman;
+  /* zoom: 1.3; */
+}
+.li__asepciaQ {
+  list-style: disc;
+}
+
+ul li {
+  padding: 0;
+  margin: 0;
+}
