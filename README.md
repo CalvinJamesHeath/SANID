@@ -4,4 +4,4 @@
 < Live Links />
 
 
-((# [GH-PAGES](https://calvinjamesheath.github.io/sanid/)))
+#[GH-PAGES](https://calvinjamesheath.github.io/sanid/)
