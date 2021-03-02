@@ -1,10 +1,19 @@
-img {
-  height: auto;
-  object-fit: contain;
+.fiscal {
+  height: 470px;
+  width: 500px;
+  /* margin-bottom: 5px; */
 }
 h1 {
   color: red;
 }
 .titulo-fiscal {
   text-decoration: underline;
+}
+.dtf {
+  text-align: -webkit-center;
+}
+.card__imgc {
+  /* background-color: ; */
+  /* width: 200px;
+  height: 100px; */
 }
