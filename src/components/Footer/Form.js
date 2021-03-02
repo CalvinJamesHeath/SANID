@@ -72,7 +72,7 @@ class Footer extends Component {
                   marginHeight="0"
                   marginWidth="0"
                   // zIndex="0"
-                  src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=Sanid%20SA+(Sanid)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13620.276265780782!2d-64.50318534633693!3d-31.412223131901808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d67a684553835%3A0xdbafd92113f49471!2sSanid%20sa!5e0!3m2!1ses-419!2sar!4v1610205849844!5m2!1ses-419!2sar"
                 ></iframe>
               </div>
             </Grid>
