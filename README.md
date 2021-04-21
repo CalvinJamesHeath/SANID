@@ -2,6 +2,7 @@
 # [NETLIFY](https://sanid.netlify.app/)
 
 ## Fast Reload with React Router 
+## Its not finished yet due to the photographer.
 ![](https://github.com/CalvinJamesHeath/sanid/blob/master/imagenes/home.jpg)
 
 ## Realtime working form with Email.JS
